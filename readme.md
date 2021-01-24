@@ -2,7 +2,7 @@
 
 ## TDlabs 
 <br/> 
-Website for oredering ***assistance*** in the implementation of study projects 
+Website for oredering **_assistance_** in the implementation of study projects 
 
 ## Tools 
 
