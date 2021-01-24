@@ -1,5 +1,3 @@
-#About Project
-
 ## TDlabs 
 
 Website for oredering **_assistance_** in the implementation of study projects 
