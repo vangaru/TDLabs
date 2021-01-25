@@ -1,6 +1,6 @@
 <div class="carousel slide" data-ride="carousel">
 
-	<!-- Баннер для больших экранов -->
+	<!-- Баннер для устройств с большим экраном -->
 	<div class="carousel-inner d-none d-sm-none d-md-none d-lg-block d-xl-block" id="large-screen">
 		<div class="carousel-item active">
 		    <img src="images/anime2.jpg"/>
@@ -12,7 +12,7 @@
 		</div>
 	</div>
 
-	<!-- Баннер для средних экранов -->
+	<!-- Баннер для устройств с средним экраном -->
 	<div class="carousel-inner d-none d-sm-block d-md-block d-lg-none d-xl-none" id="middle-screen">
 		<div class="carousel-item active">
 			<img src="images/всратыйПрогер.jpg">
@@ -24,7 +24,7 @@
 		</div>
 	</div>
 
-	<!-- Баннер для маленьких экранов -->
+	<!-- Баннер для устройств с маленьким экраном -->
 	<div class="carousel-inner d-block d-sm-none d-md-none d-lg-none d-xl-none" id="small-screen">
 		<div class="carousel-item active">
 			<img src="images/cartmanonpc.jpg">
@@ -34,7 +34,5 @@
 			</div>
 		</div>
 	</div>
+
 </div>
-
-
-
