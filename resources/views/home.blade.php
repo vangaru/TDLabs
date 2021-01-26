@@ -22,7 +22,6 @@
 @endsection
 
 @include('inc.banner')
-
-
+@include('inc.timer')
 
 @endsection

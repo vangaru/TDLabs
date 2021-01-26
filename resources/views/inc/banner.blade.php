@@ -3,10 +3,10 @@
 	<!-- Баннер для устройств с большим экраном -->
 	<div class="carousel-inner d-none d-sm-none d-md-none d-lg-block d-xl-block" id="large-screen">
 		<div class="carousel-item active">
-		    <img src="images/anime2.jpg"/>
+		    <img src="images/anime2.jpg" id="hui"/>
 		    <div class="carousel-caption">
 		        <h1 class="display-2">Заказывай!</h1>
-		        <h2>Наш девиз - эффективность, качество, темп</h2>
+		        <h1 class="tagline">Наш девиз - эффективность, качество, темп</h1>
 		        <button type="button" class="btn btn-warning btn-lg">Заказать</button>
 		    </div>
 		</div>
@@ -18,7 +18,7 @@
 			<img src="images/всратыйПрогер.jpg">
 			<div class="carousel-caption">
 		        <h1 class="display-2">Заказывай!</h1>
-		        <h2>Выполним план великих работ</h2>
+		        <h1 class="tagline">Выполним план великих работ</h1>
 		        <button type="button" class="btn btn-warning btn-lg">Заказать</button>
 		    </div>
 		</div>

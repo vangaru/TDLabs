@@ -10969,16 +10969,6 @@ body {
   height: 100%;
 }
 
-@media (max-width: 576px) {
-  .carousel-inner img {
-    width: 100%;
-  }
-
-  #large-screen img {
-    transform: translateX(20%);
-  }
-}
-
 #large-screen img {
   transform: translateY(-40%);
 }
@@ -10990,15 +10980,69 @@ body {
   text-shadow: 1px 1px 10px black;
 }
 
-.carousel-caption h2 {
+@media (max-width: 576px) {
+  .carousel-inner img {
+    width: 100%;
+  }
+
+  #large-screen img {
+    transform: translateX(20%);
+  }
+
+  .carousel-caption h3 {
+    font-size: 2.5em;
+  }
+
+  #timer-header .display-3 {
+    font-size: 2.5em;
+  }
+}
+
+@media (max-width: 400px) {
+  .carousel-caption h3 {
+    font-size: 1.8em;
+  }
+
+  #timer-header .display-3 {
+    font-size: 1.8em;
+  }
+}
+
+@media (max-width: 320px) {
+  .carousel-caption h3 {
+    font-size: 1.3em;
+  }
+
+  #timer-header .display-3 {
+    font-size: 1.3em;
+  }
+}
+
+@media (max-width: 270px) {
+  .carousel-caption {
+    transform: translateY(-135%);
+  }
+}
+
+.carousel-caption .tagline {
   color: #cd0000;
   font-weight: bolder;
 }
 
-#timer div {
+#timer .time {
   font-weight: 100;
   font-size: 100px;
   font-family: "Titillium Web", cursive;
+}
+
+@media (max-width: 576px) {
+  #timer .time {
+    font-size: 50px;
+  }
+
+  #timer .time-label {
+    font-size: 10px;
+  }
 }
 
 #days {
