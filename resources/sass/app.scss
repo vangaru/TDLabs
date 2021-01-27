@@ -67,18 +67,21 @@ body{
 	#timer-header .display-3{
 		font-size: 1.8em;
 	}
+	#conditions-head{
+		font-size: 1.8em;
+	}
 }
 
 @media (max-width: 320px){
 	.carousel-caption h3{
-		font-size: 1.3em;
+		font-size: 1.4em;
 	}
 	#timer-header .display-3{
-		font-size: 1.3em;
+		font-size: 1.8em;
 	}
 }
 
-@media (max-width: 270px){
+@media (max-width: 290px){
 	.carousel-caption{
 		transform: translateY(-135%);
 	}
@@ -119,3 +122,8 @@ body{
 #seconds{
 	color: #abcd58;
 }
+
+.bg-222{
+	background: #222;
+}
+
