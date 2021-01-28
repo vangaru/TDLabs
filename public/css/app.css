@@ -10980,6 +10980,12 @@ body {
   text-shadow: 1px 1px 10px black;
 }
 
+@media (max-width: 990px) {
+  #timer-header .display-3 {
+    font-size: 3.5em;
+  }
+}
+
 @media (max-width: 576px) {
   .carousel-inner img {
     width: 100%;
@@ -11007,7 +11013,7 @@ body {
     font-size: 1.8em;
   }
 
-  #conditions-head {
+  .article-head {
     font-size: 1.8em;
   }
 }
@@ -11045,7 +11051,7 @@ body {
   }
 
   #timer .time-label {
-    font-size: 10px;
+    font-size: 20px;
   }
 }
 

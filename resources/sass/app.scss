@@ -45,6 +45,12 @@ body{
 	text-shadow: 1px 1px 10px black;
 }
 
+@media (max-width: 990px){
+	#timer-header .display-3{
+		font-size: 3.5em;
+	}
+}
+
 @media (max-width: 576px){
 	.carousel-inner img{
 		width: 100%;
@@ -58,6 +64,7 @@ body{
 	#timer-header .display-3{
 		font-size: 2.5em;
 	}
+
 }
 
 @media (max-width: 400px){
@@ -67,7 +74,7 @@ body{
 	#timer-header .display-3{
 		font-size: 1.8em;
 	}
-	#conditions-head{
+	.article-head{
 		font-size: 1.8em;
 	}
 }
@@ -103,7 +110,7 @@ body{
 		font-size: 50px;
 	}
 	#timer .time-label{
-		font-size: 10px;
+		font-size: 20px;
 	}
 }
 

@@ -1,11 +1,26 @@
 @extends('layouts.app')
 
+@section('nav-list')
+    <li class="nav-item">
+        <a class="nav-link" href="{{ route('home') }}">ГЛАВНАЯ</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{{ route('service') }}">УСЛУГИ</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{{ route('about') }}">О НАС</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{{ route('contacts') }}">КОНТАКТЫ</a>
+    </li>
+@endsection
+
 @section('content')
-<div class="container">
+<div class="container mt-5">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Reset Password') }}</div>
+            <div class="card bg-dark text-secondary">
+                <div class="card-header">{{ __('Смена Пароля') }}</div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -18,7 +33,7 @@
                         @csrf
 
                         <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
+                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail') }}</label>
 
                             <div class="col-md-6">
                                 <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
@@ -33,8 +48,8 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Send Password Reset Link') }}
+                                <button type="submit" class="btn btn-outline-primary">
+                                    {{ __('Отправить Ссылку На Смену Пароля') }}
                                 </button>
                             </div>
                         </div>
