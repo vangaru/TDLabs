@@ -9,7 +9,7 @@
 	</head>
 
 	<body>
-		@include('inc.header')
+		@include('inc.header')			
 		@yield('content')
 	</body>
 

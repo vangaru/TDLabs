@@ -11,13 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-})->name('home');
-
-Route::get('/home', function () {
-    return view('home');
-})->name('home');
+Route::get(
+	'/', 
+	'HomeController@getReviews'
+)->name('home');
 
 Route::get('/about', function () {
 	return view('about');
@@ -39,9 +36,10 @@ Route::get('/auth/register', function() {
 	return view('register');
 })->name('register');
 
-Auth::routes();
-
-// Route::get('/home', 'HomeController@index')->name('home');
+Route::post(
+	'/addreview',
+	'HomeController@addReview'
+)->name('add_review');
 
 Auth::routes();
 
