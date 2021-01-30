@@ -134,3 +134,13 @@ body{
 	background: #222;
 }
 
+#fixed{
+	height: 400px;
+	background: url("/images/anime4.jpg") no-repeat center center fixed;
+	background-blend-mode: multiply; 
+	background-color: rgb(0,0,128,0.5);
+	background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+}

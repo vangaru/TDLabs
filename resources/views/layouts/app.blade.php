@@ -11,6 +11,7 @@
 	<body>
 		@include('inc.header')			
 		@yield('content')
+		@include('inc.footer')
 	</body>
 
 	<script src="/js/app.js"></script>
