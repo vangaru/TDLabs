@@ -11002,6 +11002,10 @@ body {
   #timer-header .display-3 {
     font-size: 2.5em;
   }
+
+  .lead {
+    font-size: 1em;
+  }
 }
 
 @media (max-width: 400px) {
@@ -11084,5 +11088,15 @@ body {
   -o-background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
+}
+
+@media (max-width: 576px) {
+  #fixed {
+    height: 200px;
+  }
+}
+
+#copyright {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 

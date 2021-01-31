@@ -11,8 +11,8 @@
         </ul>
         <ul class="navbar-nav ml-auto">
         @if (Auth::guest())
-            <li class="nav-item ml-auto"><a class="nav-link text-primary" href="{{ route('login') }}">ВОЙТИ</a></li>
-            <li class="nav-item ml-auto"><a class="nav-link text-info" href="{{ route('register') }}">РЕГИСТРАЦИЯ</a></li>
+            <li class="nav-item"><a class="nav-link text-primary" href="{{ route('login') }}">ВОЙТИ</a></li>
+            <li class="nav-item"><a class="nav-link text-info" href="{{ route('register') }}">РЕГИСТРАЦИЯ</a></li>
         @else
             <li class="nav-item">
                 <a class="nav-link text-danger" href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">ВЫЙТИ</a>

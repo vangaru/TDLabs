@@ -32,7 +32,7 @@
 <br/>
 <div class="container">
 	<div class="row">
-		<div class="col-md-9">
+		<div class="col-md-10, col-lg-9">
 			<h1 class="text-light article-head">Условия и нюансы</h1>
 			<ul class="list-group list-group-flush text-secondary">
 				<li class="list-group-item bg-222">
@@ -46,7 +46,7 @@
 				<li class="list-group-item bg-222">
 					<p class="lead">Сразу четко озвучивайте все требования к работам
 					(тема, предмет, задачи, условия, вариант, преподавтель, сроки, факульет, группа, ФИО), т.к. в дальнейшем
-					будет сложно с нами связаться через почту- мы там не особо сидим.</p>
+					будет сложно с нами связаться через почту - мы там не особо сидим.</p>
 				</li>
 				<li class="list-group-item bg-222">
 					<p class="lead">В случае какой-либо ошибки с нашей стороны, мы гарантируем, что исправим ее,
@@ -61,7 +61,7 @@
 		</div>
 	</div>
 
-	<div class="col-md-9 text-center">
+	<div class="col-md-10, col-lg-9 text-center">
 		<button type="button" class="btn btn-outline-success" data-toggle="collapse" data-target="#reviews">
 			Посмотреть отзывы
 		</button>
@@ -85,7 +85,7 @@
 
 	<div class="mt-3">
 		<div class="row">
-			<div class="col-md-9">
+			<div class="col-md-10 col-lg-9">
 				<form method="POST" action="{{ route('add_review') }}">
 					@if(Auth::user())
 
@@ -95,9 +95,9 @@
 					<input type="hidden" name="date" value="{{ date('Y-m-d H:m:i') }}"/>
 					
 					<div class="form-group row">
-						<label for="review" class="col-md-9 col-form-label"><h3 class="text-light">Оставьте отзыв</h3></label>
+						<label for="review" class="col-md-9 col-lg-10 col-form-label"><h3 class="text-light">Оставьте отзыв</h3></label>
 						@if($errors->any())
-						<div class="alert alert-danger col-md-9 ml-3">
+						<div class="alert alert-danger col-md-10 col-lg-9 ml-3">
 							<ul> 
 							@foreach($errors->all() as $e)
 								<li> {{ $e }} </li>
@@ -118,7 +118,7 @@
 
 					<fieldset disabled>
 						<div class="form-group row">
-							<label for="review" class="col col-form-label"><h3 class="text-secondary">Авторизуйтесь, чтобы оставить отзыв</h3></label>
+							<label for="review" class="co-md-9 col-lg-10 col-form-label"><h3 class="text-secondary">Авторизуйтесь, чтобы оставить отзыв</h3></label>
 							<textarea class="form-control ml-3 mr-3" id="review" name="review" rows="6"></textarea>
 						</div>
 
@@ -136,5 +136,5 @@
 	</div>
 
 </div>
-
+@include('inc.footer')
 @endsection
