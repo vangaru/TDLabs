@@ -7,7 +7,11 @@
 		    <div class="carousel-caption">
 		        <h1 class="display-2">Заказывай!</h1>
 		        <h1 class="tagline">Наш девиз - эффективность, качество, темп</h1>
-		        <button type="button" class="btn btn-warning btn-lg">Заказать</button>
+		        <a href="{{ route('service') }}">
+		        	<button type="button" class="btn btn-warning btn-lg">
+		        		Заказать
+		        	</button>
+		        </a>
 		    </div>
 		</div>
 	</div>
@@ -19,7 +23,11 @@
 			<div class="carousel-caption">
 		        <h1 class="display-2">Заказывай!</h1>
 		        <h1 class="tagline">Выполним план великих работ</h1>
-		        <button type="button" class="btn btn-warning btn-lg">Заказать</button>
+		        <a href="{{ route('service') }}">
+		        	<button type="button" class="btn btn-warning btn-lg">
+		        		Заказать
+		        	</button>
+		       	</a>
 		    </div>
 		</div>
 	</div>
@@ -30,7 +38,11 @@
 			<img src="images/cartmanonpc.jpg">
 			<div class="carousel-caption">
 				<h3>Занимайтесь любовью, а не лабами</h3>
-				<button type="button" class="btn btn-warning btn-sm">Заказать</button>
+				<a href="{{ route('service') }}">
+					<button type="button" class="btn btn-warning btn-sm">
+						Заказать
+					</button>
+				</a>
 			</div>
 		</div>
 	</div>

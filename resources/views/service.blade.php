@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title')
-	TDLabs
+	Услуги
 @endsection
 
 @section('content')
@@ -20,5 +20,11 @@
 		<a class="nav-link" href="{{ route('contacts') }}">КОНТАКТЫ</a>
 	</li>
 @endsection
+
+<div class="container">
+	<div class="row">
+		
+	</div>
+</div>
 
 @endsection

@@ -12,4 +12,3 @@ Website for oredering **_assistance_** in the implementation of study projects
 ## Contributors
 
 - [VANGARU](https://github.com/vangaru)
-- [DIMA](https://github.com/NeitLC)

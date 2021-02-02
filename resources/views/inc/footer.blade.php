@@ -12,9 +12,6 @@
         	<li class="text-secondary">
         		<a href="mailto:2sdaydude@gmail.com" class="text-secondary">2sdaydude@gmail.com</a>
         	</li>
-        	<li class="text-secondary">
-        		<a href="mailto:gribovskiy.01@gmail.com" class="text-secondary">gribovskiy.01@gmail.com</a>
-        	</li>
 	    </ul>
       </div>
       <!--Grid column-->
@@ -24,12 +21,21 @@
 	        <h5 class="text-uppercase text-light">Ваш аккаунт</h5>
 
 	        <ul class="list-unstyled mb-0">
+            @if(Auth::user())
+            <li>
+              <a class="text-secondary" href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Выйти</a>
+              <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                {{ csrf_field() }}
+              </form>            
+            </li>
+            @else
 	          <li>
 	            <a class="text-secondary" href="{{ route('login') }}">Войти</a>
 	          </li>
 	          <li>
 	            <a class="text-secondary" href="{{ route('register') }}">Регистрация</a>
 	          </li>
+            @endif
 	        </ul>
       </div>
 
