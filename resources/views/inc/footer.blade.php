@@ -5,7 +5,7 @@
     <!--Grid row-->
     <div class="row">
       <!--Grid column-->
-      <div class="col-lg-3 col-md-12 mb-4 mb-md-0">
+      <div class="col-lg-3 col-sm-12 mb-4 mb-md-0">
         <a class="navbar-brand text-light" href="{{ route('home') }}">TDLabs</a>
 
         <ul class="list-unstyled mb-0">
@@ -20,7 +20,7 @@
       <!--Grid column-->
 
       <!--Grid column-->
-      <div class="col-lg-3 col-md-4 mb-4 mb-md-0">
+      <div class="col-lg-3 col-sm-4 mb-4 mb-md-0 mt-3">
 	        <h5 class="text-uppercase text-light">Ваш аккаунт</h5>
 
 	        <ul class="list-unstyled mb-0">
@@ -33,7 +33,7 @@
 	        </ul>
       </div>
 
-      <div class="col-lg-3 col-md-4 mb-4 mb-md-0">
+      <div class="col-lg-3 col-sm-4 mb-4 mb-md-0 mt-3">
 	        <h5 class="text-uppercase text-light">навигация</h5>
 
 	        <ul class="list-unstyled mb-0">
@@ -54,7 +54,7 @@
       <!--Grid column-->
 
       <!--Grid column-->
-      <div class="col-lg-3 col-md-4 mb-4 mb-md-0">
+      <div class="col-lg-3 col-sm-4 mb-4 mb-md-0 mt-3">
         <h5 class="text-uppercase text-light">образование</h5>
 
         <ul class="list-unstyled">

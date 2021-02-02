@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title')
-	TDLabs
+	Главная
 @endsection
 
 @section('content')
@@ -134,8 +134,6 @@
 			</div>
 		</div>
 	</div>
-
-	<div class="scrollup"><button class="btn btn-outline-secondary scrollup-btn text-light d-none d-sm-block">^</button></div>
 
 </div>
 @include('inc.footer')
