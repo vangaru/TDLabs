@@ -13,7 +13,12 @@
 
 Route::get(
 	'/', 
-	'HomeController@getReviews'
+	'ReviewsController@getReviews'
+)->name('index');
+
+Route::get(
+	'/home',
+	'HomeController@index' 
 )->name('home');
 
 Route::get('/about', function () {
@@ -28,19 +33,36 @@ Route::get('/contacts', function () {
 	return view('contacts');
 })->name('contacts');
 
-Route::get('/auth/login', function() {
-	return view('login');
-})->name('login');
+// Route::get('/auth/login', function() {
+// 	return view('login');
+// })->name('login');
 
-Route::get('/auth/register', function() {
-	return view('register');
-})->name('register');
+// Route::get('/auth/register', function() {
+// 	return view('register');
+// })->name('register');
 
 Route::post(
 	'/addreview',
-	'HomeController@addReview'
-)->name('add_review');
+	'ReviewsController@addReview'
+)->name('add.review');
 
 Auth::routes();
+
+Route::prefix('admin')->group(function(){
+	Route::get(
+		'/', 
+		'AdminController@index'
+	)->name('admin.dashboard');
+	
+	Route::get(
+		'/login', 
+		'Auth\AdminLoginController@showLoginForm'
+	)->name('admin.login');
+	
+	Route::post(
+		'/login', 
+		'Auth\AdminLoginController@login'
+	)->name('admin.login.submit');
+});
 
 // Route::get('/home', 'HomeController@index')->name('home');

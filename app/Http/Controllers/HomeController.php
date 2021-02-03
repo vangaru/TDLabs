@@ -3,28 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Http\Requests\ReviewAddRequest;
-use App\Models\Reviews;
 
 class HomeController extends Controller
 {
-
-    public function getReviews ()
+    public function __construct()
     {
-        return view('home', ['reviews'=>Reviews::all()]);
+    	$this->middleware('auth');
     }
 
-    public function addReview(ReviewAddRequest $req)
+    public function index()
     {
-        $review = new Reviews();
-
-        $review->name = $req->input('name');
-        $review->date = $req->input('date');
-        $review->review = $req->input('review');
-
-        $review->save();
-
-        return redirect()->route('home');
+    	return view('home');
     }
-
 }

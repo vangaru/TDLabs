@@ -47,7 +47,7 @@
 	            <a class="text-secondary" href="{{ route('contacts') }}">Контакты</a>
 	          </li>
 	          <li>
-	            <a class="text-secondary" href="{{ route('home') }}">Главная</a>
+	            <a class="text-secondary" href="{{ route('index') }}">Главная</a>
 	          </li>
 	          <li>
 	            <a class="text-secondary" href="{{ route('service') }}">Услуги</a>
@@ -86,7 +86,7 @@
 
   <!-- Copyright -->
   <div class="container-fluid text-center p-3" id="copyright">
-    © {{ date('Y') }} Copyright: <a href="{{ route('home') }}">TDLabs.by</a>
+    © {{ date('Y') }} Copyright: <a href="{{ route('index') }}">TDLabs.by</a>
   </div>
   <!-- Copyright -->
 </footer>

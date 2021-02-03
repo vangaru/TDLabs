@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
   <div class="container-fluid d-flex">
-    <a class="navbar-brand" href="{{route('home')}}">TDLabs</a>
+    <a class="navbar-brand" href="{{route('index')}}">TDLabs</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
     	<span class="navbar-toggler-icon"></span>
     </button>

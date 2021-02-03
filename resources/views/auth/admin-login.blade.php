@@ -20,10 +20,10 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card bg-dark text-secondary">
-                <div class="card-header">{{ __('Войти') }}</div>
+                <div class="card-header">{{ __('Войти Как Администратор') }}</div>
 
                 <div class="card-body">
-                    <form method="POST" action="{{ route('login') }}">
+                    <form method="POST" action="{{ route('admin.login.submit') }}">
                         @csrf
 
                         <div class="form-group row">
