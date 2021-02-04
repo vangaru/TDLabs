@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
   <div class="container-fluid d-flex">
-    <a class="navbar-brand" href="{{route('index')}}">TDLabs</a>
+    <a class="navbar-brand" href="{{ route('index') }}">TDLabs</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
     	<span class="navbar-toggler-icon"></span>
     </button>
@@ -11,15 +11,36 @@
         </ul>
         <ul class="navbar-nav ml-auto">
         @if (Auth::guest())
-            <li class="nav-item"><a class="nav-link text-primary" href="{{ route('login') }}">ВОЙТИ</a></li>
-            <li class="nav-item"><a class="nav-link text-info" href="{{ route('register') }}">РЕГИСТРАЦИЯ</a></li>
+            <li class="nav-item"><a class="nav-link text-dark" href="{{ route('login') }}"><button class="btn btn-light">Войти</button></a></li>
+            <li class="nav-item"><a class="nav-link text-danger" href="{{ route('register') }}"><button class="btn btn-danger">Регистрация</button></a></li>
         @else
-            <li class="nav-item">
-                <a class="nav-link text-danger" href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">ВЫЙТИ</a>
-                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                    {{ csrf_field() }}
-                </form>
+            @if (Auth::guard('admin')->check())
+            <li class="navbar-brand">ADMIN</li>
+
+            @else
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle text-uppercase" data-toggle="dropdown" role="button" aria-expanded="false">
+                    {{ Auth::user()->name }} <span class="caret"></span></a>
+                
+                <ul class="dropdown-menu bg-dark" role="menu">
+                    <li>
+                        <a class="nav-link text-danger" href="{{ route('logout') }}"
+                            onclick="event.preventDefault();
+                                     document.getElementById('logout-form').submit();">
+                            ВЫЙТИ
+
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                            {{ csrf_field() }}
+                        </form>
+                        </a>
+
+                        <a class="nav-link text-success" href="{{ route('home') }}">
+                            ДОМОЙ
+                        </a>
+                    </li>
+                </ul>
             </li>
+            @endif
         @endif
         </ul>  
     </div> 

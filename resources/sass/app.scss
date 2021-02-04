@@ -178,3 +178,13 @@ body{
 #copyright{
 	background-color: rgba(0,0,0,0.2);
 }
+
+.carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}

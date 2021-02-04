@@ -6,12 +6,12 @@ use Illuminate\Http\Request;
 use App\Http\Requests\ReviewAddRequest;
 use App\Models\Reviews;
 
-class ReviewsController extends Controller
+class IndexController extends Controller
 {
 
     public function getReviews ()
     {
-        return view('main', ['reviews'=>Reviews::all()]);
+        return view('index', ['reviews'=>Reviews::all()]);
     }
 
     public function addReview(ReviewAddRequest $req)
@@ -24,7 +24,7 @@ class ReviewsController extends Controller
 
         $review->save();
 
-        return redirect()->route('main');
+        return redirect()->route('index');
     }
 
 }

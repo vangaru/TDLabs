@@ -11,15 +11,9 @@
 |
 */
 
-Route::get(
-	'/', 
-	'ReviewsController@getReviews'
-)->name('index');
+Route::get('/', 'IndexController@getReviews')->name('index');
 
-Route::get(
-	'/home',
-	'HomeController@index' 
-)->name('home');
+Route::get('/home', 'HomeController@index' )->name('home');
 
 Route::get('/about', function () {
 	return view('about');
@@ -41,28 +35,18 @@ Route::get('/contacts', function () {
 // 	return view('register');
 // })->name('register');
 
-Route::post(
-	'/addreview',
-	'ReviewsController@addReview'
-)->name('add.review');
+Route::post('/addreview', 'IndexController@addReview')->name('add.review');
 
 Auth::routes();
 
-Route::prefix('admin')->group(function(){
-	Route::get(
-		'/', 
-		'AdminController@index'
-	)->name('admin.dashboard');
-	
-	Route::get(
-		'/login', 
-		'Auth\AdminLoginController@showLoginForm'
-	)->name('admin.login');
-	
-	Route::post(
-		'/login', 
-		'Auth\AdminLoginController@login'
-	)->name('admin.login.submit');
-});
+Route::get('/users/logout', 'Auth\LoginController@userLogout')->name('user.logout');
 
-// Route::get('/home', 'HomeController@index')->name('home');
+Route::prefix('admin')->group(function(){
+	Route::get('/', 'AdminController@index')->name('admin.dashboard');
+
+	Route::get('/login', 'Auth\AdminLoginController@showLoginForm')->name('admin.login');
+	
+	Route::post('/login', 'Auth\AdminLoginController@login')->name('admin.login.submit');
+
+	Route::get('/logout', 'Auth\AdminLoginController@adminLogout')->name('admin.logout');
+});
