@@ -21,6 +21,5 @@
 
 @section('content')
 
-
-@include('inc.footer')
 @endsection
+

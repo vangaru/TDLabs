@@ -153,5 +153,4 @@
 	</table>
 </div>
 
-@include('inc.footer')
 @endsection

@@ -9,9 +9,12 @@
 	</head>
 
 	<body>
-		@include('inc.header')			
-		@yield('content')
-		@include('inc.scrollup')
+		<div class="content">
+			@include('inc.header')			
+			@yield('content')
+			@include('inc.scrollup')
+		</div>
+		@include('inc.footer')
 	</body>
 
 	<script src="/js/app.js"></script>
