@@ -49773,6 +49773,8 @@ MY CUSTOM SCRIPTS
 ===================================================================
 ***/
 
+/** TIMER BEFORE SESSION **/
+
 function makeTimer() {
   var sessionStartTime = new Date("7 June 2021 00:00:00 GMT+03:00");
   sessionStartTime = Date.parse(sessionStartTime) / 1000;
@@ -49805,6 +49807,8 @@ function makeTimer() {
 setInterval(function () {
   makeTimer();
 }, 1000);
+/** SCROLLUP BUTTON **/
+
 $(function () {
   // при нажатии на кнопку scrollup
   $('.scrollup-btn').click(function () {

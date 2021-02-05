@@ -9,8 +9,6 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
-
-
 body{
 	background-color: #222;
 }
@@ -179,7 +177,7 @@ body{
 	background-color: rgba(0,0,0,0.2);
 }
 
-.carousel-item {
+#adminCarousel .carousel-item {
   height: 100vh;
   min-height: 350px;
   background: no-repeat center center scroll;

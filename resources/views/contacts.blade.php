@@ -4,8 +4,6 @@
 	TDLabs
 @endsection
 
-@section('content')
-
 @section('nav-list')
 	<li class="nav-item">
 		<a class="nav-link" href="{{ route('index') }}">ГЛАВНАЯ</a>
@@ -20,5 +18,8 @@
 		<a class="nav-link" href="{{ route('contacts') }}">КОНТАКТЫ</a>
 	</li>
 @endsection
+
+@section('content')
+
 
 @endsection

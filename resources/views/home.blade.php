@@ -4,8 +4,6 @@
 Домашняя
 @endsection
 
-@section('content')
-
 @section('nav-list')
 	<li class="nav-item">
 		<a class="nav-link" href="{{ route('index') }}">ГЛАВНАЯ</a>
@@ -21,6 +19,7 @@
 	</li>
 @endsection
 
+@section('content')
 
 
 @include('inc.footer')

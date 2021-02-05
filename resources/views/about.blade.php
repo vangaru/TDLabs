@@ -4,8 +4,6 @@
 	О нас
 @endsection
 
-@section('content')
-
 @section('nav-list')
 	<li class="nav-item">
 		<a class="nav-link" href="{{ route('index') }}">ГЛАВНАЯ</a>
@@ -21,6 +19,8 @@
 	</li>
 @endsection
 
+@section('content')
+
 <div class="container mt-5">
 	<h1 class="text-light article-head">О нас</h1>
 	<div class="row">
@@ -33,7 +33,7 @@
 
 			<p class="lead text-secondary">
 				Мы - гики, обычные студенты, переделавшие кучу лаб. Так что,
-				хоть мы и никакие не кандидаты наук, мы знаем с чем имеем дело, к тому же и оцениваем наш труд дешевле, чем те же
+				хоть мы и никакие не кандидаты наук, мы знgitаем с чем имеем дело, к тому же и оцениваем наш труд дешевле, чем те же
 				мудреные академики. 
 			</p>
 
