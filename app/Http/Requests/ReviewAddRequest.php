@@ -24,14 +24,15 @@ class ReviewAddRequest extends FormRequest
     public function rules()
     {
         return [
-            'review' => 'min:5',
+            'review' => 'min:5|max:300',
         ];
     }
 
     public function messages()
     {
         return [
-            'review.min' => 'Ваш отзыв должен быть длиннее - минимум 5 символов'
+            'review.min' => 'Ваш отзыв должен быть длиннее - минимум 5 символов',
+            'review.max' => 'Ваш отзыв должен быть короче - максимум 300 символов',
         ];
     }
 }

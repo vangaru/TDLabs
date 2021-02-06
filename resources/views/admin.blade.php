@@ -48,7 +48,7 @@
       <div class="carousel-item" style="background-image: url('/images/mr-robot-pink.jpg')">
         <div class="carousel-caption">
           <h2 class="display-4">Check Service</h2>
-          <a href="#">
+          <a href="{{ route('admin.service') }}">
             <button class="btn btn-danger">Check</button>
           </a>
         </div>

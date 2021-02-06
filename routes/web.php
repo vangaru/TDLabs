@@ -15,13 +15,9 @@ Route::get('/', 'IndexController@getReviews')->name('index');
 
 Route::get('/home', 'HomeController@index' )->name('home');
 
-Route::get('/about', function () {
-	return view('about');
-})->name('about');
+Route::get('/about', function () { return view('about'); })->name('about');
 
-Route::get('/service', function () {
-	return view('service');
-})->name('service');
+Route::get('/service', 'ServiceController@getService')->name('service');
 
 Route::get('/contacts', function () {
 	return view('contacts');
@@ -35,7 +31,7 @@ Route::get('/contacts', function () {
 // 	return view('register');
 // })->name('register');
 
-Route::post('/add-review', 'IndexController@addReview')->name('add.review');
+Route::post('/addReview', 'IndexController@addReview')->name('addReview');
 
 Auth::routes();
 
@@ -66,7 +62,23 @@ Route::prefix('admin')->group(function(){
 
 		Route::get('/', 'AdminUsersController@getUsers')->name('admin.users');
 
+		Route::post('/sort', 'AdminUsersController@sort')->name('admin.users.sort');
 
+		Route::get('/delete/{id}', 'AdminUsersController@deleteUser')->name('admin.users.delete');
+	});
+
+
+	Route::prefix('service')->group(function(){
+
+		Route::get('/', 'AdminServiceController@getService')->name('admin.service');
+
+		Route::post('/addService', 'AdminServiceController@addService')->name('admin.service.add');
+
+		Route::get('/delete/{id}', 'AdminServiceController@deleteService')->name('admin.service.delete');
+
+		Route::get('/redact/{id}', 'AdminServiceController@getOneService')->name('admin.service.redact');
+
+		Route::post('/redact/{id}', 'AdminServiceController@redactService')->name('admin.service.redact.submit');
 	});
 
 });

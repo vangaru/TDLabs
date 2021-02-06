@@ -12,8 +12,8 @@
 <li class="nav-item">
 	<a class="nav-link" href="{{ route('admin.users') }}">ПОЛЬЗОВАТЕЛИ</a>
 </li>
-<li class="nav-item active">
-	<a class="nav-link" href="#">УСЛУГИ</a>
+<li class="nav-item">
+	<a class="nav-link" href="{{ route('admin.service') }}">УСЛУГИ</a>
 </li>
 <li class="nav-item">
 	<a class="nav-link" href="#">РАБОТЫ</a>

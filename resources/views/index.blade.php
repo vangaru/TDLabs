@@ -86,13 +86,13 @@
 	<div class="mt-3">
 		<div class="row">
 			<div class="col-md-10 col-lg-9">
-				<form method="POST" action="{{ route('add.review') }}">
+				<form method="POST" action="{{ route('addReview') }}">
 					@if(Auth::user())
 
 					@csrf
 
 					<input type="hidden" name="name" value="{{ Auth::user()->name }}"/>
-					<input type="hidden" name="date" value="{{ date('Y-m-d H:m:i') }}"/>
+					<input type="hidden" name="date" value="{{ date('Y-m-d') }}"/>
 					
 					<div class="form-group row">
 						<label for="review" class="col-md-9 col-lg-10 col-form-label"><h3 class="text-light">Оставьте отзыв</h3></label>

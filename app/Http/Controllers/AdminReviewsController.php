@@ -7,6 +7,12 @@ use App\Models\Reviews;
 
 class AdminReviewsController extends Controller
 {
+    
+    public function __construct()
+    {
+        $this->middleware('auth:admin');
+    }
+
     public function getReviews ()
     {
         return view('admin-reviews', ['reviews' => Reviews::all()]);
